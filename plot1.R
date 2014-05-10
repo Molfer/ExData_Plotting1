@@ -4,6 +4,6 @@ power$Datetime = strptime(paste(power$Date, power$Time), "%e/%m/%Y %H:%M:%S")
 
 png(filename="plot1.png", height=480, width=480, bg="transparent")
 with(power, 
-     hist(Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power", bg="red")
+     hist(Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")
 )
 dev.off()
