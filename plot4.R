@@ -2,7 +2,7 @@ power.consumption <- read.table("household_power_consumption.txt", header=T, sep
 power <- power.consumption[power.consumption$Date=="1/2/2007" | power.consumption$Date=="2/2/2007",]
 power$Datetime = strptime(paste(power$Date, power$Time), "%e/%m/%Y %H:%M:%S")
 
-png(filename="plot4.png", height=480, width=480)
+png(filename="plot4.png", height=480, width=480, bg="transparent")
 par(mfcol=c(2,2))
 
 with(power, 
